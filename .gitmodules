@@ -1,0 +1,6 @@
+[submodule "BRG-web"]
+	path = BRG-web
+	url = https://github.com/OscarLundberg/BRG-web.git
+[submodule "BRG-backend"]
+	path = BRG-backend
+	url = https://github.com/OscarLundberg/BRG-backend.git

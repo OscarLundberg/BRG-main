@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "breaking-ground (root)",
+			"path": "."
+		},
+		{
+			"path": "BRG-backend"
+		},
+		{
+			"path": "BRG-web"
+		},
+		{
+			"path": "BRG-web/html"
+		},
+		{
+			"path": "BRG-web/public"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.njk": "njk"
+		}
+	}
+}

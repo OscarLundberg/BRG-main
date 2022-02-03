@@ -1,0 +1,47 @@
+{
+  "name": "multiplayer-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "export $(cat .env | xargs)",
+    "start": "nodemon web/src/HTTP/index.ts && nodemon src/index.ts",
+    "http:dev": "export $(cat .env | xargs) && nodemon web/src/http/index.ts",
+    "migrate": "npx backend/prisma migrate dev",
+    "cli": "export $(cat .env | xargs) && ts-node backend/src/cli/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.8.1",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express": "^4.17.13",
+    "@types/inquirer": "^8.2.0",
+    "@types/nunjucks": "^3.2.1",
+    "@types/uuid": "^8.3.4",
+    "@types/ws": "^8.2.2",
+    "@types/yaml": "^1.9.7",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.2",
+    "express-nunjucks": "^2.2.5",
+    "inquirer": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^1.0.1",
+    "mysql": "^2.18.1",
+    "nunjucks": "^3.2.3",
+    "sendemail": "^4.0.3",
+    "simplex-noise": "^3.0.1",
+    "uuid": "^8.3.2",
+    "v4": "^0.0.1",
+    "ws": "^8.4.2",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.8",
+    "nodemon": "^2.0.15",
+    "prisma": "^3.8.1",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8"
+  }
+}

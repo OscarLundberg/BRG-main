@@ -1,0 +1,16 @@
+{
+	"editor.inlineSuggest.enabled": true,
+	"html.suggest.html5": true,
+	"emmet.includeLanguages": {
+		"njk": "html"
+	},
+	"files.associations": {
+		"*.njk": "njk"
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"BRG-web": true,
+		"BRG-backend":true,
+		// "*lock*.json":true
+	}
+}
